@@ -50,6 +50,7 @@ import './components/section-2-block.styl';
 import './components/section-3.styl';
 import './components/section-4.styl';
 import './components/section-5.styl';
+import './components/section-6.styl';
 
 // Import all application scripts.
 import './pages/index/index.js';

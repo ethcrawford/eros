@@ -1,0 +1,42 @@
+// Section 6
+
+@import '../styl/m-rem'
+
+.section-6
+  padding-top m-rem(100)
+  padding-bottom m-rem(100)
+  &__title
+    font-size m-rem(30)
+    font-weight 400
+    color #303030
+    margin-bottom m-rem(24)
+  &__text
+    font-size m-rem(16)
+    color #777
+    line-height 2
+    margin-bottom m-rem(48)
+  &__icon
+    width m-rem(40)
+    height @width
+    float left
+    background-repeat no-repeat
+    background-position left center
+    background-image url('../../images/section-6-icon.png')
+  &__quote
+    font-size m-rem(16)
+    color #777
+    line-height 2
+    margin-bottom m-rem(20)
+    font-style italic
+  &__screens
+    margin-left auto
+    width m-rem(370)
+    height m-rem(470)
+    background-image url('../../images/section-6-screens.png')
+    background-repeat no-repeat
+    background-position right bottom
+  &__author
+    font-size m-rem(16)
+    color #777
+    font-style italic
+    line-height 2.807
