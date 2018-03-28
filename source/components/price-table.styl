@@ -1,0 +1,65 @@
+// Price Table
+
+@import '../styl/m-rem'
+
+.price-table
+  text-align center
+  padding-top m-rem(22)
+  background-color white
+  &--central
+    border-radius 10px
+    background-image -moz-linear-gradient( 90deg, rgb(116,116,191) 0%, rgb(52,138,199) 100%)
+    background-image -webkit-linear-gradient( 90deg, rgb(116,116,191) 0%, rgb(52,138,199) 100%)
+    background-image -ms-linear-gradient( 90deg, rgb(116,116,191) 0%, rgb(52,138,199) 100%)
+    color white
+  &__title
+    font-size m-rem(30)
+    color #222
+    font-weight 400
+    margin-bottom m-rem(21)
+    &--central
+      color white
+  &__price
+    font-size m-rem(36)
+    color #222
+    font-weight 700
+    &--central
+      color white
+  &__caption
+    color #6f6f6f
+    font-size m-rem(14)
+    font-weight 400
+    text-transform uppercase
+    &--central
+      color white
+  &__list
+    padding-left 0
+    list-style none
+    color #6f6f6f
+    text-transform uppercase
+  &__item
+    margin-bottom m-rem(18)
+    font-size m-rem(14)
+    &--central
+      color white
+    &--last
+      margin-bottom m-rem(40)
+  &__button
+    border 1px #655aa3 solid
+    border-radius 50px
+    background-color #655aa3
+    padding m-rem(18) m-rem(48)
+    text-transform uppercase
+    color white
+    font-size m-rem(11)
+    font-weight 700
+    letter-spacing .08em
+    margin-bottom m-rem(30)
+    &:hover
+    &:active
+      color #303030
+      background-color white
+    &--central
+      color white
+      border-color white
+      background-color transparent

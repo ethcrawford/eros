@@ -53,6 +53,8 @@ import './components/section-5.styl';
 import './components/section-6.styl';
 import './components/page-footer.styl';
 import './components/social.styl';
+import './components/section-7.styl';
+import './components/price-table.styl';
 
 // Import all application scripts.
 import './pages/index/index.js';
