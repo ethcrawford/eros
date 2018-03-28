@@ -1,0 +1,203 @@
+// main.styl
+
+/**
+ * Default styles (mobile first)
+ * --------------------------------------------------------------------------
+ * Extra small devices [without postfix -xs] (portrait phones, less than 576px)
+ * No media query since this is the default
+ *
+ */
+
+/**
+ * Libs import
+ *
+ * Relative path to libs
+ * Default: '../lib/'
+ *
+ */
+/*
+$lib-path = '../lib/'
+
+@import $lib-path + '_reboot'
+@import $lib-path + '_visually-hidden'
+@import $lib-path + '_flex-grid-framework'
+*/
+
+
+/**
+ * Utils import
+ *
+ * Relative path to utils
+ * Default: './styl/'
+ *
+ */
+
+$util-path = './styl/'
+
+@import $util-path + '_variables'
+@import $util-path + '_mixins'
+@import $util-path + '_extends'
+
+
+
+/**
+ * Fonts import
+ *
+ * Relative path to font utils
+ * Default: './styl/'
+ *
+ */
+/*
+@import $util-path + '_font-faces'
+@import $util-path + '_google-fonts'
+*/
+/*
+@import $util-path + '_font-awesome-brands'
+@import $util-path + '_font-awesome-regular'
+@import $util-path + '_font-awesome-solid'
+@import $util-path + '_font-awesome'
+*/
+
+/**
+ * Mobile Fix
+ * --------------------------------------------------------------------------
+ */
+
+body
+  overflow-x hidden
+
+/**
+ * Grid
+ * --------------------------------------------------------------------------
+ */
+/*
+
+
+
+
+/**
+ * Blocks
+ * --------------------------------------------------------------------------
+ */
+
+
+
+
+
+/**
+ * Media
+ * --------------------------------------------------------------------------
+ */
+
+/**
+ * Small
+ * --------------------------------------------------------------------------
+ * Small devices [-sm] (landscape phones, 576px and up)
+ *
+ */
+
+@media (min-width: 576px)
+
+  /**
+   * Grid
+   * ------------------------------------------------------------------------
+   */
+
+  .container
+    max-width 540px
+
+
+
+
+  /**
+   * Blocks
+   * ------------------------------------------------------------------------
+   */
+
+
+/**
+ * Medium
+ * --------------------------------------------------------------------------
+ * Medium devices [-md] (tablets, 768px and up)
+ *
+ */
+
+@media (min-width: 768px)
+
+  /**
+   * Grid
+   * ------------------------------------------------------------------------
+   */
+
+  .container
+    max-width 720px
+
+
+
+
+  /**
+   * Blocks
+   * ------------------------------------------------------------------------
+   */
+
+
+
+/**
+ * Large
+ * --------------------------------------------------------------------------
+ * Large devices [-lg] (desktops, 992px and up)
+ *
+ */
+
+@media (min-width: 992px)
+
+  /**
+   * Grid
+   * ------------------------------------------------------------------------
+   */
+
+  .container
+    max-width 960px
+
+
+
+  /**
+   * Blocks
+   * ------------------------------------------------------------------------
+   */
+
+
+/**
+ * Extra large
+ * --------------------------------------------------------------------------
+ * Extra large devices [-xl] (large desktops, 1200px and up)
+ *
+ */
+
+@media (min-width: 1200px)
+
+  /**
+   * Grid
+   * ------------------------------------------------------------------------
+   */
+
+  .container
+    max-width 1140px
+
+
+
+  /**
+   * Blocks
+   * ------------------------------------------------------------------------
+   */
+
+
+/**
+ * Print [-print]
+ * --------------------------------------------------------------------------
+ * For printing
+ *
+ */
+/*
+@media print
+*/
