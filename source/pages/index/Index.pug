@@ -65,19 +65,19 @@ block main
 
           .col-lg-6
             div.section-2-block
-              span.section-2-block__icon.section-2-block__icon_1
+              span.section-2-block__icon.section-2-block__icon--1
               h2.section-2-block__title
                 | Fully responsive app
               p.section-2-block__text
                 | Aenean tempor porta quam quis tristique. In vulputate eros quis varius rutrum. Nullam rhoncus auctor placerat
             div.section-2-block
-              span.section-2-block__icon.section-2-block__icon_2
+              span.section-2-block__icon.section-2-block__icon--2
               h2.section-2-block__title
                 | Faster Pages
               p.section-2-block__text
                 | Donec vitae nibh a tortor dignissim accumsan. Fusce et tincidunt leo. Duis ut justo at tortor
             div.section-2-block
-              span.section-2-block__icon.section-2-block__icon_3
+              span.section-2-block__icon.section-2-block__icon--3
               h2.section-2-block__title
                 | Exclusive
               p.section-2-block__text
@@ -105,13 +105,48 @@ block main
       .container
         h1.section-4__title
           | Simple preview
-        p.section-4__lead
+        p.section-4__lead3
           | Vestibulum egestas varius lectus, ut vehicula lectus consequat quis. Pellentesque vitae maximus libero. Nunc elementum libero ipsum,  eu hendrerit felis dapibus nec. In dapibus facilisis tempor
         video.section-4__video(src=require('../../../videos/Bronze_set.webm') poster=require('../../../images/video-overlay.png') loop controls)
           | Sorry, your browser doesn't support embedded videos, but don't worry, you can 
           a(href='https://youtu.be/iGk5fR-t5AU')
             | download it
           |  and watch it with your favorite video player!
+
+    //- Section 5
+    section.section-5
+      .container
+        h1.visually-hidden.section-5__title
+          | Section 5
+        .row
+          .col-lg-3
+            .section-5__icon.section-5__icon--1
+            p.section-5__number
+              | 567
+            p.section-5__text
+              | Messages
+
+          .col-lg-3
+            .section-5__icon.section-5__icon--2
+            p.section-5__number
+              | 1.678
+            p.section-5__text
+              | Likes
+
+          .col-lg-3
+            .section-5__icon.section-5__icon--3
+            p.section-5__number
+              | 437
+            p.section-5__text
+              | Ideas
+
+          .col-lg-3
+            .section-5__icon.section-5__icon--4
+            p.section-5__number
+              | 1.789
+            p.section-5__text
+              | Photos
+
 
   //- Page Footer
   footer.page-footer
