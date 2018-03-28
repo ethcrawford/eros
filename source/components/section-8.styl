@@ -1,0 +1,45 @@
+// Section 8
+
+@import '../styl/m-rem'
+
+.section-8
+  padding m-rem(100) 0
+  text-align center
+  background-image -moz-linear-gradient( 90deg, rgb(116,116,191) 0%, rgb(52,138,199) 100%)
+  background-image -webkit-linear-gradient( 90deg, rgb(116,116,191) 0%, rgb(52,138,199) 100%)
+  background-image -ms-linear-gradient( 90deg, rgb(116,116,191) 0%, rgb(52,138,199) 100%)
+  &__title
+    margin-bottom m-rem(32)
+    font-size m-rem(30)
+    color white
+    font-weight 400
+  &__lead
+    margin-bottom m-rem(54)
+    font-size m-rem(16)
+    color white
+    line-height 2
+  &__input
+    font-size m-rem(14)
+    border-radius 10px
+    border 1px white solid
+    display block
+    width 100%
+    max-width m-rem(600)
+    padding m-rem(7) m-rem(30)
+    margin 0 auto m-rem(28)
+    color #555
+  &__button
+    border 1px white solid
+    border-radius 50px
+    background-color transparent
+    padding m-rem(18) m-rem(48)
+    text-transform uppercase
+    color white
+    font-size m-rem(11)
+    font-weight 700
+    letter-spacing .08em
+    margin-bottom 1rem
+    &:hover
+    &:active
+      color #303030
+      background-color white
