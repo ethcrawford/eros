@@ -1,12 +1,16 @@
 // Section 1
+
 @import '../styl/m-rem'
 
 .section-1
-  padding-top 165px
+  padding-top m-rem(165)
   background-image url('../../images/section-1-bg.png')
   background-repeat no-repeat
   background-size cover
-  background-position center center
+  background-position center bottom
+  &__title
+  &__lead
+    text-align center
   &__title
     font-size 3.125rem
     font-weight 700
@@ -29,15 +33,49 @@
     font-size m-rem(11)
     font-weight 700
     letter-spacing .08em
-    margin-bottom 1rem
+    margin-bottom 3rem
+    display block
+    margin-left auto
+    margin-right auto
     &:hover
     &:active
       color #303030
       background-color white
   &__phone
-    margin-left auto
-    height m-rem(500)
-    width m-rem(422)
     background-image url('../../images/section-1-phone.png')
     background-repeat no-repeat
-    background-position right bottom
+    background-position center bottom
+    background-size contain
+    height 100%
+    min-height m-rem(300)
+
+@media (min-width 425px)
+  .section-1
+    &__phone
+      min-height m-rem(400)
+
+@media (min-width 576px)
+  .section-1
+    &__phone
+      min-height m-rem(560)
+
+@media (min-width 768px)
+  .section-1
+    &__phone
+      background-position right bottom
+    &__button
+      margin-left 0
+      margin-right 0
+    &__title
+    &__lead
+      text-align left
+
+//@media (min-width 992px)
+/*
+// @media (min-width 1250px)
+//  .section-1
+&__phone
+  margin-right 0
+  height m-rem(500)
+  width m-rem(422)
+  */
