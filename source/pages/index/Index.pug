@@ -7,14 +7,48 @@ block title
 block main
   //- Page Header
   header.page-header
-    .container
-      h1.logo
-        | Eros
+    .container.page-header__inner
+      h1.main-logo
+        a.main-logo__link(href='#' title='Eros')
+          | Eros
+
+      nav.main-nav
+        h1.visually-hidden
+          | Main Navigation
+
+        ul.main-nav__list
+          li.main-nav__item
+            a.main-nav__link(href='#')
+              | Features
+          li.main-nav__item
+            a.main-nav__link(href='#')
+              | Preview
+          li.main-nav__item
+            a.main-nav__link(href='#')
+              | Reviews
+          li.main-nav__item
+            a.main-nav__link(href='#')
+              | Pricing
+          li.main-nav__item.main-nav__item_last
+            a.main-nav__link(href='#')
+              | Subscribe
 
   //- Page Main
   main.page-main(role='main')
-    .container
-      p Main section
+    section.section-1
+      .container
+        .row
+          .col-lg-6
+            h1.section-1__title
+              | Simply the best in this app
+            p.section-1__lead
+              | Welcome at Eros a beautiful landing page for your next creation. This is a good presentation website for your app
+
+            button.section-1__button(type='button')
+              | Download App
+
+          .col-lg-6
+            .section-1__phone
 
   //- Page Footer
   footer.page-footer

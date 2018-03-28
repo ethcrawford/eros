@@ -41,7 +41,10 @@ import '../lib/_flex-grid-framework.styl';
 
 
 import './main.styl';
-
+import './components/page-header.styl';
+import './components/main-nav.styl';
+import './components/section-1.styl';
+import './components/main-logo.styl';
 
 // Import all application scripts.
 import './pages/index/index.js';

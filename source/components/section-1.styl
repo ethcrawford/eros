@@ -1,0 +1,43 @@
+// Section 1
+@import '../styl/m-rem'
+
+.section-1
+  padding-top 165px
+  background-image url('../../images/section-1-bg.png')
+  background-repeat no-repeat
+  background-size cover
+  background-position center center
+  &__title
+    font-size 3.125rem
+    font-weight 700
+    color white
+    letter-spacing .01em
+    margin-bottom 3.125rem
+  &__lead
+    font-size 1.875rem
+    font-weight 300
+    color white
+    letter-spacing .01em
+    margin-bottom 3.375rem
+  &__button
+    border 1px white solid
+    border-radius 50px
+    background-color transparent
+    padding m-rem(18) m-rem(48)
+    text-transform uppercase
+    color white
+    font-size m-rem(11)
+    font-weight 700
+    letter-spacing .08em
+    margin-bottom 1rem
+    &:hover
+    &:active
+      color #303030
+      background-color white
+  &__phone
+    margin-left auto
+    height m-rem(500)
+    width m-rem(422)
+    background-image url('../../images/section-1-phone.png')
+    background-repeat no-repeat
+    background-position right bottom

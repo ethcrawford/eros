@@ -37,6 +37,7 @@ make-container()
 
 // extends the mixin :)
 .container
+.container-fluid
   make-container()
 
 
@@ -72,7 +73,7 @@ make-column(width-factor)
   min-height 1px
   position relative
   @extend $padding
-/*
+
 // extends the mixin :)
 if $colFlexToggle == 'on'
   .col-flex
@@ -103,7 +104,7 @@ for i in $arrayCol
   for i in $arrayColXl
     .col-xl-{i}
       make-column(i)
-*/
+
 // for media queries
 mq-col(number-of-cols)
     width (number-of-cols * flx-column_width) + (((number-of-cols - 1) * 2) * flx-margin)
