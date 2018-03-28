@@ -45,6 +45,8 @@ import './components/page-header.styl';
 import './components/main-nav.styl';
 import './components/section-1.styl';
 import './components/main-logo.styl';
+import './components/section-2.styl';
+import './components/section-2-block.styl';
 
 // Import all application scripts.
 import './pages/index/index.js';

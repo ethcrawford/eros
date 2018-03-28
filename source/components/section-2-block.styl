@@ -1,0 +1,30 @@
+// Section 2 Info block
+
+@import '../styl/m-rem'
+
+.section-2-block
+  padding-top m-rem(22)
+  padding-bottom m-rem(22)
+  &__icon
+    width m-rem(40)
+    height @width
+    float left
+    background-repeat no-repeat
+    background-position left center
+    &_1
+      background-image url('../../images/section-2-icon-1.png')
+    &_2
+      background-image url('../../images/section-2-icon-2.png')
+    &_3
+      background-image url('../../images/section-2-icon-3.png')
+  &__title
+    font-size m-rem(18)
+    color #303030
+    line-height 2.5
+    font-weight 400
+  &__text
+    font-size 1rem
+    font-weight 400
+    color #777
+    max-width m-rem(400)
+    line-height 2
