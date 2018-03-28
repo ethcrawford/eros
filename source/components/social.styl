@@ -1,0 +1,26 @@
+// Social links
+
+@import '../styl/m-rem'
+
+.social
+  list-style none
+  display flex
+  justify-content center
+  align-items baseline
+  padding-left 0
+  &__item
+    margin-right m-rem(8)
+    &--last
+      margin-right 0
+  &__link
+    background-repeat no-repeat
+    background-position center center
+    display block
+    width m-rem(18)
+    height m-rem(18)
+    &--1
+      background-image url('../../images/social-icon-1.png')
+    &--2
+      background-image url('../../images/social-icon-2.png')
+    &--3
+      background-image url('../../images/social-icon-3.png')
