@@ -25,6 +25,12 @@ $arrayJustifyMd = 'start' 'end' 'center' 'between' 'around'
 $arrayJustifyLg = 'start' 'end' 'center' 'between' 'around'
 $arrayJustifyXl = 'start' 'end' 'center' 'between' 'around'
 
+$arrayAlign
+$arrayAlignSm = 'start' 'end' 'center'
+$arrayAlignMd = 'start' 'end' 'center'
+$arrayAlignLg = 'start' 'end' 'center'
+$arrayAlignXl = 'start' 'end' 'center'
+
 
 $margin
   margin-right flx-margin
@@ -177,39 +183,36 @@ for i in $arrayJustify
 
 // mixin
 mq-vertical-align(vertical-value)
-    if (vertical-value == top)
-        -webkit-box-align start
-        -webkit-align-items flex-start
-        -ms-flex-align start
+    if (vertical-value == start)
         align-items flex-start
-        -webkit-align-content flex-start
-        -ms-flex-line-pack start
-        align-content flex-start
 
-    if (vertical-value == middle)
-        -webkit-box-align center
-        -webkit-align-items center
-        -ms-flex-align center
+    if (vertical-value == center)
         align-items center
-        -webkit-align-content center
-        -ms-flex-line-pack center
-        align-content center
 
-    if (vertical-value == bottom)
-        -webkit-box-align end
-        -webkit-align-items flex-end
-        -ms-flex-align end
+    if (vertical-value == end)
         align-items flex-end
-        -webkit-align-content flex-end
-        -ms-flex-line-pack end
-        align-content flex-end
 
 // extends the mixin :)
-$vertical-align-top
-    mq-vertical-align(top)
+for i in $arrayAlign
+  .vertical-align-{i}
+    mq-vertical-align(i)
 
-$vertical-align-middle
-    mq-vertical-align(middle)
+@media (min-width: 576px)
+  for i in $arrayAlignSm
+    .vertical-align-sm-{i}
+      mq-vertical-align(i)
 
-$vertical-align-bottom
-    mq-vertical-align(bottom)
+@media (min-width: 768px)
+  for i in $arrayAlignMd
+    .vertical-align-md-{i}
+      mq-vertical-align(i)
+
+@media (min-width: 992px)
+  for i in $arrayAlignLg
+    .vertical-align-lg-{i}
+      mq-vertical-align(i)
+
+@media (min-width: 1200px)
+  for i in $arrayAlignXl
+    .vertical-align-xl-{i}
+      mq-vertical-align(i)
