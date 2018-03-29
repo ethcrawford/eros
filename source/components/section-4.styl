@@ -1,6 +1,7 @@
 // Section 4
 
 @import '../styl/m-rem'
+@import '../styl/m-media'
 
 .section-4
   padding-top m-rem(100)
@@ -20,8 +21,12 @@
     margin-bottom m-rem(60)
   &__video
     display block
-    width m-rem(950)
-    height m-rem(470)
+    width 100%
+    max-width 100%
+    height auto
+    +widerthan($lg)
+      width m-rem(950)
+      height m-rem(470)
     margin-left auto
     margin-right auto
     border 1px #ddd solid
