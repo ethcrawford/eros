@@ -12,12 +12,18 @@ $arrayName = value0, value1, value2
 $arrayName[1] //value1
 */
 $colFlexToggle = 'off'
-$arrayCol = 1 2 3 4 5 6 7 8 9 10 11 12
+$arrayCol   = 1 2 3 4 5 6 7 8 9 10 11 12
 $arrayColSm = 1 2 3 4 5 6 7 8 9 10 11 12
 $arrayColMd = 1 2 3 4 5 6 7 8 9 10 11 12
 $arrayColLg = 1 2 3 4 5 6 7 8 9 10 11 12
 $arrayColXl = 1 2 3 4 5 6 7 8 9 10 11 12
 
+// start end center between around
+$arrayJustify   = 'start' 'end' 'center' 'between' 'around'
+$arrayJustifySm = 'start' 'end' 'center' 'between' 'around'
+$arrayJustifyMd = 'start' 'end' 'center' 'between' 'around'
+$arrayJustifyLg = 'start' 'end' 'center' 'between' 'around'
+$arrayJustifyXl = 'start' 'end' 'center' 'between' 'around'
 
 
 $margin
@@ -126,50 +132,45 @@ for i in (0..(flx-column_number - 1))
 
 // mixin
 mq-justify(content-value)
-    if (content-value == left)
-        -webkit-box-pack start
-        -webkit-justify-content flex-start
-        -ms-flex-pack start
+    if (content-value == start)
         justify-content flex-start
 
-    if (content-value == right)
-        -webkit-box-pack end
-        -webkit-justify-content flex-end
-        -ms-flex-pack end
+    if (content-value == end)
         justify-content flex-end
 
     if (content-value == center)
-        -webkit-box-pack center
-        -webkit-justify-content center
-        -ms-flex-pack center
         justify-content center
 
     if (content-value == between)
-        -webkit-box-pack justify
-        -webkit-justify-content space-between
-        -ms-flex-pack justify
         justify-content space-between
 
     if (content-value == around)
-        -webkit-justify-content space-around
-        -ms-flex-pack distribute
         justify-content space-around
 
 // extends the mixin :)
-$justify-left
-    mq-justify(left)
+for i in $arrayJustify
+  .justify-{i}
+    mq-justify(i)
 
-$justify-right
-    mq-justify(right)
+@media (min-width: 576px)
+  for i in $arrayJustifySm
+    .justify-sm-{i}
+      mq-justify(i)
 
-$justify-center
-    mq-justify(center)
+@media (min-width: 768px)
+  for i in $arrayJustifyMd
+    .justify-md-{i}
+      mq-justify(i)
 
-$justify-between
-    mq-justify(between)
+@media (min-width: 992px)
+  for i in $arrayJustifyLg
+    .justify-lg-{i}
+      mq-justify(i)
 
-$justify-around
-    mq-justify(around)
+@media (min-width: 1200px)
+  for i in $arrayJustifyXl
+    .justify-xl-{i}
+      mq-justify(i)
 
 /* Flex Itens
 ------------------------------------------------*/

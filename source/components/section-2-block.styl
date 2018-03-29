@@ -1,17 +1,14 @@
 // Section 2 Info block
 
 @import '../styl/m-rem'
+@import '../styl/m-media'
 
 .section-2-block
   padding-top m-rem(22)
   padding-bottom m-rem(22)
-  margin-left m-rem(30)
+  +widerthan($md)
+    margin-left m-rem(30)
   &__icon
-    width m-rem(40)
-    height @width
-    float left
-    background-repeat no-repeat
-    background-position left center
     &--1
       background-image url('../../images/section-2-icon-1.png')
     &--2
@@ -20,12 +17,27 @@
       background-image url('../../images/section-2-icon-3.png')
   &__title
     font-size m-rem(18)
+    display table
+    margin-left auto
+    margin-right auto
     color #303030
     line-height 2.5
     font-weight 400
+    padding-left m-rem(40)
+    background-repeat no-repeat
+    background-position left center
+    +widerthan($md)
+      display block
   &__text
     font-size 1rem
     font-weight 400
     color #777
     max-width m-rem(400)
     line-height 2
+    text-align center
+    margin-left auto
+    margin-right auto
+    +widerthan($md)
+      margin-left 0
+      margin-right 0
+      text-align left

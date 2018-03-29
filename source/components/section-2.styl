@@ -1,6 +1,7 @@
 // Section 2
 
 @import '../styl/m-rem'
+@import '../styl/m-media'
 
 .section-2
   padding-top m-rem(96)
@@ -22,10 +23,14 @@
     line-height 2
     margin-bottom m-rem(52)
   &__phone
-    width m-rem(300)
-    height m-rem(580)
+    height 100%
+    min-height m-rem(580)
     background-image url('../../images/section-2-phone.png')
     background-repeat no-repeat
-    background-position right bottom
-    margin-right m-rem(30)
-    margin-left auto
+    background-size contain
+    background-position center bottom
+    +widerthan($sm)
+      min-height m-rem(560)
+    +widerthan($md)
+      max-height m-rem(580)
+      background-position right bottom
