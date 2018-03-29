@@ -57,8 +57,17 @@ import './components/section-7.styl';
 import './components/price-table.styl';
 import './components/section-8.styl';
 
+
+
 // Import all application scripts.
 import './pages/index/index.js';
+
+// Main nav toggle
+$(".main-nav-toggle").on('click', function(event){
+  $(".main-nav").toggleClass('main-nav_active');
+  $(".section-1").toggleClass('section-1_top');
+  return false;
+});
 
 /**
  * Tracking.
