@@ -1,6 +1,7 @@
 // Section 6
 
 @import '../styl/m-rem'
+@import '../styl/m-media'
 
 .section-6
   padding-top m-rem(100)
@@ -10,15 +11,19 @@
     font-weight 400
     color #303030
     margin-bottom m-rem(24)
+    text-align center
+    +widerthan($md)
+      text-align left
   &__text
     font-size m-rem(16)
     color #777
     line-height 2
     margin-bottom m-rem(48)
+    text-align center
+    +widerthan($md)
+      text-align left
   &__icon
-    width m-rem(40)
-    height @width
-    float left
+    padding-left m-rem(40)
     background-repeat no-repeat
     background-position left center
     background-image url('../../images/section-6-icon.png')
@@ -28,15 +33,26 @@
     line-height 2
     margin-bottom m-rem(20)
     font-style italic
+    text-align center
+    +widerthan($md)
+      text-align left
   &__screens
-    margin-left auto
-    width m-rem(370)
-    height m-rem(470)
+    height auto
+    min-height m-rem(470)
     background-image url('../../images/section-6-screens.png')
     background-repeat no-repeat
-    background-position right bottom
+    background-size contain
+    background-position center center
+    +widerthan($md)
+      background-position right center
   &__author
     font-size m-rem(16)
     color #777
     font-style italic
     line-height 2.807
+    display table
+    margin-left auto
+    margin-right auto
+    +widerthan($md)
+      margin-left 0
+      margin-right 0
